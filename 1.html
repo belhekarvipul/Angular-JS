@@ -1,0 +1,48 @@
+<html ng-app="">
+<head>
+<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body>
+<center><b>Fill Information</b></center>
+
+<div>
+Name : <input type="text" ng-model="name"/>
+</div>
+
+<div>
+Address : <textarea ng-model="address"> </textarea>
+</div>
+
+<div>
+Gender : <input type="radio" value='Male' ng-model="gender">Male</input>
+<input type="radio" value='Female' ng-model="gender">Female</input>
+</div>
+
+<div>
+Education : <select ng-model="education">
+<option>SSC</option>
+<option>HSC</option>
+<option>Graduate</option>
+<option>Post Graduate</option>
+</select>
+</div>
+
+<hr/>
+<center><b>Your Information</b></center>
+<div>Name : {{name}}</div>
+<div>Address : {{address}}</div>
+<div>Gender : {{gender}}</div>
+<div>Education : {{education}}</div>
+<br/><br/><br/>
+
+<hr/>
+<b>** Comments</b><br/>
+This is first Angular app<br/><br/>
+Below are mandatory things:<br/>
+<li>Referance to angular js</li>
+<li>Set <b>ng-app</b> in <b>&#60html&#62</b> tag</li>
+<li>Set <b>ng-model</b> to any field</li>
+<li>Read ng-model value using <b>{{ model_member_name }} </b></li>
+</body>
+</html>
